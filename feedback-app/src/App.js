@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Header } from "./Components/Header";
-import { FeedbackList } from "./Components/FeedbackList";
+import { Header } from "./components/Header";
+import { FeedbackList } from "./components/FeedbackList";
 import { FeedbackData } from "./data/FeedbackData";
 
 export function App() {

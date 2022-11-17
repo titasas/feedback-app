@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FeedbackItem } from "./FeedbackItem";
 
 export function FeedbackList({ feedback }) {
@@ -12,3 +13,13 @@ export function FeedbackList({ feedback }) {
     </div>
   );
 }
+
+FeedbackList.propTypes = {
+  feedback: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      text: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
+    })
+  ),
+};
